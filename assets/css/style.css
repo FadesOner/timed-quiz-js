@@ -1,0 +1,44 @@
+body { 
+    background-color:white;
+}
+/* highscore and timer */
+header {
+    display: inline;
+    
+}
+a {
+    text-decoration: none;
+}
+.timer {
+    position: absolute;
+    right: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    background-color: slateblue;
+    border-radius: 5px; 
+    color: snow;
+}
+
+.btn {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+
+}
+
+.hide{
+    display: none;
+}
+
+li{ 
+    list-style-type: none;
+}

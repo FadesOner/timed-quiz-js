@@ -1,0 +1,95 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timed Quiz!</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="flexbox">
+      <a href="./highscores.html"><span>View Highscores</span></a>
+      <span class="timer">Time:</span>
+    </header>
+
+    <section id="section-main-page">
+
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Try to answer the following code-related questions within the Time <br />
+          limit. Keep in mind that incorrect answers will penalize your scoretime
+          <br />
+          by 10 seconds.
+        </p>
+        <div class="container">
+          <div class="btn">
+            <button class="startq">Start Quiz</button>
+          </div>
+        </div>
+    </section>
+
+    <section id="section-question" class="hide">
+
+        <div class="container">
+            <h1 id="question-title">QuestionTitle</h1>
+    
+            <ul id="choice-list">
+                <li><button class="btn">choice 1</button></li>
+                
+                
+            </ul>
+        </div>
+    </section>
+
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
+
+<!-- questions
+
+1. What are the data types supported by JavaScript?
+
+a symbol , boolean , strings, number'
+
+b yellow , blue , red 
+
+c up , down , left , right
+
+d name , surname , age , eyes
+
+2. Is JavaScript a case-sensitive language?
+
+Yes
+No
+
+3. How can you create an Array in JavaScript?
+
+var arr = [1 , 2, 3, 4];
+var arr "1, 2, 3, 4"
+var arr { 1, 2, 3, 4}
+
+4 What is the name of this formula?
+"for (var i = 0; i < whateverLength; i++) {
+    var randomI = Math.floor(Math.random() * choice.length);
+    password = password + choice[randomI];
+  }"?
+
+- loop
+- const
+- string
+- addition
+
+5 What is javaScript used for?
+
+to add interactivity to websites
+to give style to a html 
+to create html documents
+
+6 How do you link a javaScript document into html?
+
+- <link rel="javascript" href="Assets/javascript.js" type="text/js">
+- <script src="./assets/js/script.js"></script> 
+- <a href="/javaScript.js"></a>
+-->
