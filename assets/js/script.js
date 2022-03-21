@@ -1,10 +1,10 @@
 var timeEl = document.querySelector(".timer");
 var secondsLeft = 60;
 var choice = false;
-var answer1 = document.getElementById("answer1");
-var answer2 = document.getElementById("answer2");
-var answer3 = document.getElementById("answer3");
-var answer4 = document.getElementById("answer4");
+var answer1 = questions[0].choices[0].title;
+var answer2 = questions[0].choices[1].title;
+var answer3 = questions[0].choices[2].title;
+var answer4 = questions[0].choices[3].title;
 var isCorrect = true;
 // import { questions } from './questions';
 //when i click on start button 
@@ -27,12 +27,11 @@ buttonStartQuiz.addEventListener("click", function(event){
 function showQuestion(index){
  
 document.getElementById("question-title").innerHTML = questions[0].title;
-document.getElementById("answer1").innerHTML = questions[0].choices[0].title;
-document.getElementById("answer2").innerHTML = questions[0].choices[1].title;
-document.getElementById("answer3").innerHTML = questions[0].choices[2].title;
-document.getElementById("answer4").innerHTML = questions[0].choices[3].title;
+document.getElementById("answer1").innerHTML = answer1
+document.getElementById("answer2").innerHTML = answer2
+document.getElementById("answer3").innerHTML = answer3
+document.getElementById("answer4").innerHTML = answer4
 
-// if (isCorrect == true) showQuestion(1);
 
 }
 
@@ -45,5 +44,18 @@ function startTimer() {
     
 }
 
+answer1.addEventListener("click", showQuestion(0));
+    
 
-
+// function answerQ() {
+// let answerQuestion;
+// if (answerQuestion == answer1){
+//     showQuestion(0);
+// } else {
+//     textContent = "wrong answer"
+// }
+// }
+for (var i = 0; i < questions.length; i++){
+    showQuestion(i);
+}
+console.log(showQuestion);

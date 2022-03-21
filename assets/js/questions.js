@@ -20,6 +20,8 @@ const questions = [
         },
       ],
     },
+
+    //2nd question
     {
       title: "Is JavaScript a case-sensitive language??",
       choices: [
