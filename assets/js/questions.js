@@ -1,89 +1,47 @@
-const questions = [
-    {
-      title: "What are the data types supported by JavaScript?",
-      choices: [
-        {
-          title: "symbol , boolean , strings, number",
-          isCorrect: true,
-        },
-        {
-          title: "yellow , blue , red",
-          isCorrect: false,
-        },
-        {
-          title: "name , surname , age , eyes",
-          isCorrect: false,
-        },
-        {
-          title: "up , down , left , right",
-          isCorrect: false,
-        },
-      ],
-    },
-
-    //2nd question
-    {
-      title: "Is JavaScript a case-sensitive language??",
-      choices: [
-        {
-          title: "Yes",
-          isCorrect: true,
-        },
-        {
-          title: "No",
-          isCorrect: false,
-        },
-      ],
-    },
-    {
-      title: "How can you create an Array in JavaScript?",
-      choices: [
-        {
-          title: "var arr = [1 , 2, 3, 4];",
-          isCorrect: true,
-        },
-        {
-          title: "var arr '1, 2, 3, 4'",
-          isCorrect: false,
-        },
-        {
-          title: "var arr { 1, 2, 3, 4}",
-          isCorrect: false,
-        },
-      ],
-    },
-   {
-      title: "What is javaScript used for?",
-      choices: [
-        {
-          title: "to add interactivity to websites",
-          isCorrect: true,
-        },
-        {
-          title: "to give style to a html",
-          isCorrect: false,
-        },
-        {
-          title: "to create html documents",
-          isCorrect: false,
-        },
-      ],
-    },
-    {
-      title: "How do you link a javaScript document into html?",
-      choices: [
-        {
-          title: "<link rel='javascript' href='Assets/javascript.js' type='text/js'clas>",
-          isCorrect: true,
-        },
-        {
-          title: "<script src='./assets/js/script.js'></script> ",
-          isCorrect: false,
-        },
-        {
-          title: "<a href='/javaScript.js'></a>",
-          isCorrect: false,
-        },
-      ],
-    },
-  ];
+var questions = [
+  { 
+      question: "JavaScript is ________ language", 
+      answers: [
+          { text: "a compiled", correct: false },
+          { text: "an interpreted" , correct: true },
+          { text: "Translated", correct: false },
+          { text: "sheet style language", correct: false }
+      ]
+  },
+  { 
+      question: "Which of the following methods is used to use HTML elements when using JavaScript?", 
+      answers: [
+          { text: "idfromHtml()", correct: false },
+          { text: "console.log()", correct: false },
+          { text: "getElementbyId()", correct: true },
+          { text: "ElementByHtml()", correct: false }
+      ]
+  },
+  { 
+      question: "How can a datatype be declared to be a constant type in javaScript?", 
+      answers: [
+          { text: "const", correct: true },
+          { text: "int", correct: false },
+          { text: "let", correct: false },
+          { text: "var", correct: false }
+      ]
+  },
+  { 
+      question: "What keyword is used to declare an asynchronous function in Javascript?", 
+      answers: [
+          { text: "setFunction", correct: false },
+          { text: "async", correct: true },
+          { text: "sync", correct: false },
+          { text: "None of the above", correct: false }
+      ]
+  },
+  { 
+      question: "Who was the creator of JavaScript?",
+      answers: [
+          { text: "Mark Elliot Zuckerberg", correct: false },
+          { text: "Guido van Rossum", correct: false },
+          { text: "James Gosling", correct: false },
+          { text: "Brendan Eich", correct: true }
+      ]
+  },
+];

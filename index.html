@@ -1,99 +1,71 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timed Quiz!</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <header class="flexbox">
-      <a href="./highscores.html"><span>View Highscores</span></a>
-      <span class="timer"></span>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timed Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <body>
+    <header>
+        <div class="scores">
+            <a id="highscores-link">View high scores</a>
+        </div>
+        <div id="timer" class="timer">
+            Time: 60
+        </div>
     </header>
 
-    <section id="section-main-page">
-
-        <h1>Coding Quiz Challenge</h1>
+    <section id="start-container" class="start-quiz">
+        <h1>Welcome to JavaScript Quiz Challenge</h1>
         <p>
-          Try to answer the following code-related questions within the Time <br />
-          limit. Keep in mind that incorrect answers will penalize your scoretime
-          <br />
-          by 10 seconds.
-        </p>
-        <div class="container">
-          <div class="btn">
-            <button class="startq">Start Quiz</button>
-          </div>
+          Try to answer the following code-related questions. You will have 60 seconds but keep in mind that incorrect answers will penalize your scoretime
+          by 10 seconds. Good Luck!
+        <div class="controls">
+            <button id="start-btn" class="start-btn">Start Quiz</button>
         </div>
     </section>
 
-    <section id="section-question" class="hide">
-
-        <div class="container">
-            <h1 id="question-title">QuestionTitle</h1>
-    
-            <ul id="choice-list">
-                <!-- <li ><button id="answer1" class="btn1">answer1</button></li>
-                <li><button id="answer2" class="btn1">answer2</button></li>
-                <li><button id="answer3" class="btn1">answer3</button></li>
-                <li><button id="answer4" class="btn1">answer4</button></li> -->
-                
-                </ul>
-              
-                <span class="hide" id="span-feedback"></span>
+    <section id="question-container" class="hide">
+        <h1 id="question">Question</h1>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+        <h2 id="check-answer" class="correct-wrong hide"></h2>
+        <div class="controls">
+            <button id="next-btn" class="next-btn hide">Next</button>
         </div>
     </section>
 
+    <section id="score-container" class="hide">
+        <form id="submit-form">
+            <h3 id="your-score"></h3>
+            <label id="initials-label">Enter your initials to see them on the Leaderboard:</label>
+            <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
+            <button id="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <section id="highscores" class="highscores-container hide">
+        <div id="high-scores">
+            <h1 class="centered">Leaderboard</h1>
+            <div id="highscore" class="highscore highscore-list">
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Restart</button>
+                <button id="clear-btn">Clear Scores</button>
+            </div>
+        </div>
+        
+    </section>
 
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/script.js"></script>
-  </body>
+</body>
+
 </html>
-
-<!-- questions
-
-1. What are the data types supported by JavaScript?
-
-a symbol , boolean , strings, number'
-
-b yellow , blue , red 
-
-c up , down , left , right
-
-d name , surname , age , eyes
-
-2. Is JavaScript a case-sensitive language?
-
-Yes
-No
-
-3. How can you create an Array in JavaScript?
-
-var arr = [1 , 2, 3, 4];
-var arr "1, 2, 3, 4"
-var arr { 1, 2, 3, 4}
-
-4 What is the name of this formula?
-"for (var i = 0; i < whateverLength; i++) {
-    var randomI = Math.floor(Math.random() * choice.length);
-    password = password + choice[randomI];
-  }"?
-
-- loop
-- const
-- string
-- addition
-
-5 What is javaScript used for?
-
-to add interactivity to websites
-to give style to a html 
-to create html documents
-
-6 How do you link a javaScript document into html?
-
-- <link rel="javascript" href="Assets/javascript.js" type="text/js">
-- <script src="./assets/js/script.js"></script> 
-- <a href="/javaScript.js"></a>
--->
